@@ -1,7 +1,10 @@
 def fibonacci(n):
-    if(n <= 1):
-        return n
-    else:
-        return ((n-1) + (n-2))
-
-# if __name__ == "__main__":
+    number1 = int(0)
+    number2 = int(1)
+    count = int(0)
+    while count < n:
+        nth = number1 + number2
+        number1 = number2
+        number2 = nth
+        count += 1
+    return nth
